@@ -29,6 +29,7 @@ public class FunctionUsage{
 		FunctionUsage functionUsage = new  FunctionUsage();  
 		  
 	    Function<Employee, String> funcEmpToString= (Employee e)-> {return e.getName();};
+	    
 	    List<Employee> employeeList= 
 	     Arrays.asList(
 	      functionUsage.new Employee("Tom Jones", 45), 
