@@ -26,15 +26,15 @@ public class FilteringUsage{
 	}
 	  public static void main(String args[]){
 		  
-		FilteringUsage functionUsage = new  FilteringUsage();  
+		FilteringUsage filteringUsage = new  FilteringUsage();  
 		  
 	    List<Employee> employeeList= 
 	     Arrays.asList(
-	      functionUsage.new Employee("Tom Jones", 55), 
-	      functionUsage.new Employee("Harry Major", 25),
-	      functionUsage.new Employee("Ethan Hardy", 65),
-	      functionUsage.new Employee("Nancy Smith", 15),
-	      functionUsage.new Employee("Deborah Sprightly", 29));
+	      filteringUsage.new Employee("Tom Jones", 55), 
+	      filteringUsage.new Employee("Harry Major", 25),
+	      filteringUsage.new Employee("Ethan Hardy", 65),
+	      filteringUsage.new Employee("Nancy Smith", 15),
+	      filteringUsage.new Employee("Deborah Sprightly", 29));
 	    
 	    // TODO: print the names of all employees who are over 50 years of age!
 	   
