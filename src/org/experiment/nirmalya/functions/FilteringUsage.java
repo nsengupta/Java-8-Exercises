@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Function;
+import java.util.function.Supplier;
 
 public class FilteringUsage{
 	
@@ -20,6 +21,10 @@ public class FilteringUsage{
 		}
 		public Integer getAge() {
 			return age;
+		}
+		
+		public String reportableEmployee() {
+			return ("Name=" + this.name + ",Age=" + this.age);
 		}
 		
 		
@@ -39,8 +44,16 @@ public class FilteringUsage{
 	    // TODO: print the names of all employees who are over 50 years of age!
 	   
 	 }
-	 public static List<String> collectSeniorEmployees(List<Employee> employeeList){
-	   List<String> empNameList = null;
-	   return empNameList;
+	 public static List<String> collectSeniorEmployees(
+			 List<Employee> employeeList,
+			 Supplier<String> supplier){
+	   
+		 List<String> reportableEmployeeList = new ArrayList<String>();
+		 
+		 for(Employee e: employeeList) {
+			 
+			 em
+		 }
+	   return reportableEmployeeList;
 	  }
 	}
